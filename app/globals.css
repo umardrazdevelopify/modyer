@@ -1,26 +1,172 @@
 @import "tailwindcss";
 
+/* Whyte Inktrap Font Face Declarations */
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Thin_1.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Book.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-BookItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-HeavyItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-Super.ttf') format('truetype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte Inktrap';
+  src: url('/fonts/whyte-inktrap/WhyteInktrap-SuperItalic.ttf') format('truetype');
+  font-weight: 950;
+  font-style: italic;
+}
+
 :root {
   /* Primary Colors */
-  --background: #F8F5EE;
-  --foreground: #222222;
+  --background: #F5EAD4;
+  --foreground: #000000;
   
   /* Navigation Colors */
-  --nav-bg: transparent;
-  --nav-text: #222222;
+  --nav-bg: #F5EAD4;
+  --nav-text: #000000;
   --nav-button-bg: #000000;
   --nav-button-text: #ffffff;
   
   /* Hero Section Colors */
-  --hero-text: #222222;
+  --hero-text: #000000;
   --hero-underline: #000000;
+  
+  /* Button Colors */
+  --button-bg: #0f766e;
+  --button-text: #ffffff;
+  --button-outline: #f59e0b;
   
   /* Illustration Colors */
   --illustration-branch: #E88B6B;
   --illustration-hands: #000000;
   
   /* Typography */
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Whyte Inktrap', var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -33,6 +179,9 @@
   --color-nav-button-text: var(--nav-button-text);
   --color-hero-text: var(--hero-text);
   --color-hero-underline: var(--hero-underline);
+  --color-button-bg: var(--button-bg);
+  --color-button-text: var(--button-text);
+  --color-button-outline: var(--button-outline);
   --color-illustration-branch: var(--illustration-branch);
   --color-illustration-hands: var(--illustration-hands);
   --font-sans: var(--font-sans);
@@ -43,13 +192,13 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --nav-text: #ededed;
-    --hero-text: #ededed;
+    --nav-text: #000000;
+    --hero-text: #000000;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: 'Whyte Inktrap', var(--font-sans), Arial, Helvetica, sans-serif;
 }

@@ -3,122 +3,135 @@
 import { useState } from 'react';
 
 export default function Navbar() {
-  const [isCommitmentsOpen, setIsCommitmentsOpen] = useState(false);
-  const [isLearnOpen, setIsLearnOpen] = useState(false);
-  const [isTryClaudeOpen, setIsTryClaudeOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <nav className="w-full px-6 py-4 bg-[var(--nav-bg)]">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)]">
+      <div className="w-full flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="text-2xl font-bold text-[var(--nav-text)]">
-            ANTHROPIC
-          </span>
+          <img 
+            src="/assets/Asset 1.png" 
+            alt="MODYR Logo" 
+            className="h-23 w-auto"
+          />
         </div>
 
-        {/* Navigation Links */}
+        {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           <a 
-            href="#" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors"
+            href="/" 
+            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
           >
-            Research
+            Home
           </a>
           <a 
-            href="#" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors"
+            href="/services" 
+            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
           >
-            Economic Futures
+            Services
           </a>
-          
-          {/* Commitments Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setIsCommitmentsOpen(!isCommitmentsOpen)}
-              className="flex items-center text-[var(--nav-text)] hover:text-gray-600 transition-colors"
-            >
-              Commitments
-              <svg 
-                className="ml-1 w-4 h-4" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {isCommitmentsOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50">
-                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Commitment 1</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Commitment 2</a>
-              </div>
-            )}
-          </div>
-
-          {/* Learn Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setIsLearnOpen(!isLearnOpen)}
-              className="flex items-center text-[var(--nav-text)] hover:text-gray-600 transition-colors"
-            >
-              Learn
-              <svg 
-                className="ml-1 w-4 h-4" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {isLearnOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50">
-                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Learn 1</a>
-                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Learn 2</a>
-              </div>
-            )}
-          </div>
-
           <a 
-            href="#" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors"
+            href="/our-approach" 
+            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
           >
-            News
+            Our Approach
+          </a>
+          <a 
+            href="/about-us" 
+            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+          >
+            About Us
+          </a>
+          <a 
+            href="/contact-us" 
+            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+          >
+            Contact Us
           </a>
         </div>
 
-        {/* Try Claude Button */}
-        <div className="relative">
-          <button
-            onClick={() => setIsTryClaudeOpen(!isTryClaudeOpen)}
-            className="bg-[var(--nav-button-bg)] text-[var(--nav-button-text)] px-6 py-2 rounded-md font-medium hover:bg-gray-800 transition-colors flex items-center"
-          >
-            Try Claude
-            <svg 
-              className="ml-1 w-4 h-4" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          {isTryClaudeOpen && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50">
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 1</a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 2</a>
-            </div>
-          )}
-        </div>
+        {/* Desktop Book a Call Button */}
+        <a
+          href="/try-claude"
+          className="hidden md:block bg-[var(--button-bg)] text-[var(--button-text)] px-8 py-3 rounded-md font-medium hover:opacity-90 transition-colors flex items-center"
+        >
+          Book a Call
+        </a>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-[var(--nav-text)]">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        <button 
+          onClick={toggleMobileMenu}
+          className="md:hidden text-[var(--nav-text)]"
+        >
+          {isMobileMenuOpen ? (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
         </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-[var(--nav-bg)] border-t border-gray-200">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {/* Mobile Navigation Links */}
+            <a 
+              href="/" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a 
+              href="/services" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a 
+              href="/our-approach" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Our Approach
+            </a>
+            <a 
+              href="/about-us" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About Us
+            </a>
+            <a 
+              href="/contact-us" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact Us
+            </a>
+            
+            {/* Mobile Book a Call Button */}
+            <a
+              href="/try-claude"
+              className="block mx-3 mt-4 bg-[var(--button-bg)] text-[var(--button-text)] px-8 py-3 rounded-md font-medium hover:opacity-90 transition-colors text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Book a Call
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

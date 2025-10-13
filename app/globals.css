@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Colors */
+  --background: #F8F5EE;
+  --foreground: #222222;
+  
+  /* Navigation Colors */
+  --nav-bg: transparent;
+  --nav-text: #222222;
+  --nav-button-bg: #000000;
+  --nav-button-text: #ffffff;
+  
+  /* Hero Section Colors */
+  --hero-text: #222222;
+  --hero-underline: #000000;
+  
+  /* Illustration Colors */
+  --illustration-branch: #E88B6B;
+  --illustration-hands: #000000;
+  
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-nav-bg: var(--nav-bg);
+  --color-nav-text: var(--nav-text);
+  --color-nav-button-bg: var(--nav-button-bg);
+  --color-nav-button-text: var(--nav-button-text);
+  --color-hero-text: var(--hero-text);
+  --color-hero-underline: var(--hero-underline);
+  --color-illustration-branch: var(--illustration-branch);
+  --color-illustration-hands: var(--illustration-hands);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --nav-text: #ededed;
+    --hero-text: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}

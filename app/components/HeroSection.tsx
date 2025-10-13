@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-40 md:pb-40 bg-[var(--nav-bg)]">
+    <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-35 md:pb-35 bg-[var(--nav-bg)]">
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content - Hidden on mobile, shown on desktop */}
@@ -35,24 +35,19 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Animated Video - Shown first on mobile */}
+          {/* Hero Image - Shown first on mobile */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative w-100 h-100 rounded-lg overflow-hidden shadow-lg">
-              <video 
-                className="w-full h-full object-cover"
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-              >
-                <source src="/assets/Robot Rigging.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="relative w-60 h-60 lg:w-100 lg:h-100 rounded-lg overflow-hidden">
+              <img 
+                src="/assets/Asset 4.png" 
+                alt="Friendly Robot Illustration" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
 
           {/* Mobile Text Content - Shown after illustration on mobile */}
-          <div className="lg:hidden space-y-6 order-2">
+          <div className="lg:hidden space-y-6 order-2 px-4 py-6">
             <h1 className="text-4xl font-bold text-[var(--hero-text)] leading-tight font-sans">
               Simplifying Complexity.{' '}
               <span className="relative">

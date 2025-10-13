@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)]">
+    <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)] sticky top-0 z-50">
       <div className="w-full flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">

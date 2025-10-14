@@ -36,11 +36,14 @@ export default function AboutUs() {
             {/* Image/Graphic */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-96 h-96 bg-transparent flex items-center justify-center">
-                <div className="w-80 h-80 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shadow-xl">
-                  <svg className="w-40 h-40 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                <div className="w-80 h-80 rounded-lg flex items-center justify-center ">
+                  <Image 
+                    src="/assets/about-us/our story .png" 
+                    alt="Our Story" 
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -55,10 +58,14 @@ export default function AboutUs() {
             {/* Image/Graphic */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
               <div className="relative w-96 h-96 bg-transparent flex items-center justify-center">
-                <div className="w-80 h-80 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center shadow-xl">
-                  <svg className="w-40 h-40 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                <div className="w-80 h-80 rounded-lg flex items-center justify-center ">
+                  <Image 
+                    src="/assets/about-us/our team.png" 
+                    alt="Our Team" 
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             </div>

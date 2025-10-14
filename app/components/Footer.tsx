@@ -20,17 +20,6 @@ export default function Footer() {
             <p className="text-[var(--hero-text)] font-sans leading-relaxed max-w-md">
               Simplifying complexity since 1892. We transform your outdated, manual processes into intelligent, automated systems you can trust.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-[#F6A100] rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">L</span>
-              </div>
-              <div className="w-8 h-8 bg-[#F6A100] rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">T</span>
-              </div>
-              <div className="w-8 h-8 bg-[#F6A100] rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">I</span>
-              </div>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -86,14 +75,6 @@ export default function Footer() {
             <p className="text-[var(--hero-text)] font-sans text-sm">
               © 2024 MODYR. All rights reserved. Simplifying complexity since 1892.
             </p>
-            <div className="flex space-x-6 text-sm">
-              <Link href="/privacy" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

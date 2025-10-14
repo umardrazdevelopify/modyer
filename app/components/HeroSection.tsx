@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-20 md:pb-20 bg-[var(--nav-bg)]">
-      <div className="w-full">
+      <div className="w-full max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content - Hidden on mobile, shown on desktop */}
           <div className="hidden lg:block space-y-6">

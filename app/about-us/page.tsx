@@ -89,38 +89,49 @@ export default function AboutUs() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vision Card */}
-            <div className="bg-[var(--nav-bg)] rounded-xl p-8 border-2 border-teal-500 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
+            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#f3e0c2"}}>
+              <div className="text-center space-y-6">
+                <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <Image 
+                    src="/assets/about-us/vissionn.png" 
+                    alt="Our Vision" 
+                    width={120}
+                    height={120}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4">
-                  Our Vision
-                </h3>
+                <div>
+                  <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-teal-600 transition-colors">
+                    Our Vision
+                  </h3>
+                  <p className="text-lg text-[var(--hero-text)] font-sans opacity-80 leading-relaxed">
+                    To redefine how businesses navigate complexity by building intelligent, adaptable, and future-proof solutions that empower strategic growth across industries.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-[var(--hero-text)] font-sans opacity-80 leading-relaxed">
-                To redefine how businesses navigate complexity by building intelligent, adaptable, and future-proof solutions that empower strategic growth across industries.
-              </p>
             </div>
 
             {/* Mission Card */}
-            <div className="bg-[var(--nav-bg)] rounded-xl p-8 border-2 border-teal-500 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#ccddd7"}}>
+              <div className="text-center space-y-6">
+                <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <Image 
+                    src="/assets/about-us/mission.png" 
+                    alt="Our Mission" 
+                    width={120}
+                    height={120}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4">
-                  Our Mission
-                </h3>
+                <div>
+                  <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-teal-600 transition-colors">
+                    Our Mission
+                  </h3>
+                  <p className="text-lg text-[var(--hero-text)] font-sans opacity-80 leading-relaxed">
+                    We deliver cutting-edge strategic intelligence by combining data, design, and modular technology. Through deep insights, innovation, and tailored systems, we help our partners make smarter decisions, faster.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-[var(--hero-text)] font-sans opacity-80 leading-relaxed">
-                We deliver cutting-edge strategic intelligence by combining data, design, and modular technology. Through deep insights, innovation, and tailored systems, we help our partners make smarter decisions, faster.
-              </p>
             </div>
           </div>
         </div>

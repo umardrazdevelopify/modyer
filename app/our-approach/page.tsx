@@ -43,16 +43,6 @@ export default function OurApproach() {
                     <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-4">
                       We integrate with your team to understand your challenges deeply. Your goals become our goals. We succeed when you succeed, building a long-term relationship founded on mutual trust.
                     </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Deep Integration</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Shared Success</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -76,18 +66,8 @@ export default function OurApproach() {
                       Pragmatic, Human-in-the-Loop AI
                     </h3>
                     <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-4">
-                      We believe in practical innovation and view AI as a co-pilot for your business. Our solutions are designed to empower your team, not replace them.
+                    We believe in practical innovation and view AI as a co-pilot for your business. Our solutions are designed to empower your team, not replace them. By keeping a human in the loop for critical decisions, we deliver the efficiency of automation with the accountability and expertise your business demands.
                     </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">AI as Co-Pilot</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Practical Innovation</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -105,16 +85,7 @@ export default function OurApproach() {
                     <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-4">
                       The best solution is the one that&apos;s right for you. As an independent firm with key partnerships, we are free to recommend the best technology for the job.
                     </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">No Vendor Lock-in</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Strategic Partnerships</span>
-                      </div>
-                    </div>
+                  
                   </div>
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-16 h-16 group-hover:scale-110 transition-transform duration-300">
@@ -138,18 +109,9 @@ export default function OurApproach() {
                       A Phased Approach to Modernization
                     </h3>
                     <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-4">
-                      Transformation is a journey, not a switch-flip. We work with you to identify the highest-impact areas first, delivering value in manageable phases.
+                    Transformation is a journey, not a switch-flip. We work with you to identify the highest-impact areas first, delivering value in manageable phases to ensure smooth adoption, minimize risk, and generate momentum.
                     </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">High-Impact First</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Manageable Phases</span>
-                      </div>
-                    </div>
+                 
                   </div>
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-16 h-16 group-hover:scale-110 transition-transform duration-300">
@@ -173,18 +135,9 @@ export default function OurApproach() {
                       Solutions for Every Scale
                     </h3>
                     <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-4">
-                      From local firms to established enterprises, we believe powerful technology should be accessible to all. Our phased, modular approach allows us to tailor solutions.
+                    From local firms to established enterprises, we believe powerful technology should be accessible to all. Our phased, modular approach allows us to tailor solutions that fit your scale, your needs, and your budget, ensuring a tangible return on your investment.
                     </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Modular Approach</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Budget-Conscious</span>
-                      </div>
-                    </div>
+              
                   </div>
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-16 h-16 group-hover:scale-110 transition-transform duration-300">

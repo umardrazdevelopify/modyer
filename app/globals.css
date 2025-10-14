@@ -143,11 +143,11 @@
 
 :root {
   /* Primary Colors */
-  --background: #F5EAD4;
+  --background: #fcf6e6;
   --foreground: #000000;
   
   /* Navigation Colors */
-  --nav-bg: #F5EAD4;
+  --nav-bg: #fcf6e6;
   --nav-text: #000000;
   --nav-button-bg: #000000;
   --nav-button-text: #ffffff;

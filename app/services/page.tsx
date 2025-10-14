@@ -66,13 +66,13 @@ export default function Services() {
           </div>
           {/* Image/Graphic */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-80 h-80 bg-teal-500 rounded-lg flex items-center justify-center shadow-xl">
+            <div className="relative w-96 h-96 bg-transparent flex items-center justify-center">
               <Image 
                 src="/assets/service/service 1 main image.png" 
                 alt="Digital Transformation" 
-                width={300}
-                height={300}
-                className="w-60 h-60 object-contain"
+                width={400}
+                height={400}
+                className="w-80 h-80 object-contain"
               />
             </div>
           </div>
@@ -84,13 +84,13 @@ export default function Services() {
         <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image/Graphic */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-            <div className="relative w-80 h-80 bg-teal-500 rounded-lg flex items-center justify-center shadow-xl">
+            <div className="relative w-96 h-96 bg-transparent flex items-center justify-center">
               <Image 
                 src="/assets/service/service 2 main image.png" 
                 alt="Custom AI Solutions" 
-                width={300}
-                height={300}
-                className="w-60 h-60 object-contain"
+                width={400}
+                height={400}
+                className="w-80 h-80 object-contain"
               />
             </div>
           </div>
@@ -201,13 +201,13 @@ export default function Services() {
           </div>
           {/* Image/Graphic */}
           <div className="flex justify-center lg:justify-end order-2 lg:order-2">
-            <div className="relative w-80 h-80 bg-teal-500 rounded-lg flex items-center justify-center shadow-xl">
+            <div className="relative w-96 h-96 bg-transparent flex items-center justify-center">
               <Image 
                 src="/assets/service/service 3 main image.png" 
                 alt="Enterprise Database Services" 
-                width={300}
-                height={300}
-                className="w-60 h-60 object-contain"
+                width={400}
+                height={400}
+                className="w-80 h-80 object-contain"
               />
             </div>
           </div>

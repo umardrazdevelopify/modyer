@@ -7,14 +7,14 @@ export default function Footer() {
       <div className="w-full px-4 md:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center">
+          <div className="md:col-span-2">
+            <div className="flex items-center ">
               <Image 
-                src="/assets/logo for footer.png" 
+                src="/assets/logo-for-footer.png" 
                 alt="MODYR Logo" 
-                width={180}
-                height={160}
-                className="h-40 w-auto"
+                width={100}
+                height={80}
+                className="h-15 w-auto"
               />
             </div>
             <p className="text-white font-sans leading-relaxed max-w-md">

@@ -8,7 +8,7 @@ export default function HeritageMeetsHorizon() {
             Heritage Meets <span className="relative" style={{color: "#F6A100"}}>Horizon<span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span></span>
           </h2>
           <p className="text-xl text-[var(--hero-text)] font-sans opacity-80 max-w-3xl mx-auto leading-relaxed">
-            We honor a legacy of trust by building the technology of tomorrow. Here's how we do it.
+            We honor a legacy of trust by building the technology of tomorrow. Here&apos;s how we do it.
           </p>
         </div>
 

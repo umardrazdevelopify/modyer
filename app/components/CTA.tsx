@@ -11,7 +11,7 @@ export default function CTA() {
           </h2>
           
           <p className="text-xl text-[var(--hero-text)] font-sans opacity-80 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Let's discuss your biggest operational challenge. Our first conversation is a complimentary, no-obligation process review with a senior systems analyst.
+            Let&apos;s discuss your biggest operational challenge. Our first conversation is a complimentary, no-obligation process review with a senior systems analyst.
           </p>
 
           {/* CTA Button */}

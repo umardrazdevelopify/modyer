@@ -28,7 +28,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
-                  Overview
+                  Home
                 </Link>
               </li>
               <li>
@@ -37,13 +37,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/ai-technology" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
-                  AI-Technology
+                <Link href="/our-approach" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
+                  Our Approach
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
-                  Contact
+                <Link href="/about-us" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact-us" className="text-[var(--hero-text)] hover:text-[#F6A100] transition-colors font-sans">
+                  Contact Us
                 </Link>
               </li>
             </ul>

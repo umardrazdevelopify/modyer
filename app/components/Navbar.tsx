@@ -32,7 +32,7 @@ export default function Navbar() {
             href="/" 
             className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
           >
-            Overview
+            Home
           </Link>
           <Link 
             href="/services" 
@@ -41,16 +41,22 @@ export default function Navbar() {
             Services
           </Link>
           <Link 
-            href="/ai-technology" 
+            href="/our-approach" 
             className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
           >
-            AI-Technology
+            Our Approach
           </Link>
           <Link 
-            href="/contact" 
+            href="/about-us" 
             className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
           >
-            Contact
+            About Us
+          </Link>
+          <Link 
+            href="/contact-us" 
+            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+          >
+            Contact Us
           </Link>
         </div>
       </div>
@@ -95,7 +101,7 @@ export default function Navbar() {
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Overview
+              Home
             </Link>
             <Link 
               href="/services" 
@@ -105,18 +111,25 @@ export default function Navbar() {
               Services
             </Link>
             <Link 
-              href="/ai-technology" 
+              href="/our-approach" 
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              AI-Technology
+              Our Approach
             </Link>
             <Link 
-              href="/contact" 
+              href="/about-us" 
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              About Us
+            </Link>
+            <Link 
+              href="/contact-us" 
+              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact Us
             </Link>
           </div>
         </div>

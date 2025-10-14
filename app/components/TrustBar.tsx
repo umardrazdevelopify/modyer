@@ -19,9 +19,6 @@ export default function TrustBar() {
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-2xl font-bold text-white">1892</span>
               </div>
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center">
-                <span className="text-xs font-bold text-white">+</span>
-              </div>
             </div>
             <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans group-hover:text-orange-600 transition-colors">
               A Legacy of Trust
@@ -37,9 +34,6 @@ export default function TrustBar() {
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-xl font-bold text-white">30+</span>
               </div>
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-xs font-bold text-white">Y</span>
-              </div>
             </div>
             <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans group-hover:text-teal-600 transition-colors">
               Decades of Expertise
@@ -54,9 +48,6 @@ export default function TrustBar() {
             <div className="relative">
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-xl font-bold text-white">AI</span>
-              </div>
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                <span className="text-xs font-bold text-white">⚡</span>
               </div>
             </div>
             <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans group-hover:text-purple-600 transition-colors">

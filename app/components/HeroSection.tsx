@@ -41,10 +41,10 @@ export default function HeroSection() {
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative w-60 h-60 lg:w-100 lg:h-100 rounded-lg overflow-hidden">
               <Image 
-                src="/assets/Asset 4.png" 
+                src="/assets/hero section.png" 
                 alt="Friendly Robot Illustration" 
-                width={400}
-                height={400}
+                width={450}
+                height={450}
                 className="w-full h-full object-contain"
               />
             </div>

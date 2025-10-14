@@ -20,13 +20,13 @@ export default function OurApproach() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Card 1: Partners, Not Providers */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-[#F6A100] transition-colors">
+              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-teal-600 transition-colors">
                 Partners, Not Providers
               </h3>
               <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-6">
@@ -34,18 +34,18 @@ export default function OurApproach() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Deep Integration</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Shared Success</span>
                 </div>
               </div>
             </div>
 
             {/* Card 2: Pragmatic AI */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -70,13 +70,13 @@ export default function OurApproach() {
             </div>
 
             {/* Card 3: Best-of-Breed Technology */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-[#F6A100] transition-colors">
+              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-teal-600 transition-colors">
                 Best-of-Breed Technology
               </h3>
               <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-6">
@@ -84,18 +84,18 @@ export default function OurApproach() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">No Vendor Lock-in</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Strategic Partnerships</span>
                 </div>
               </div>
             </div>
 
             {/* Card 4: Phased Approach */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -120,13 +120,13 @@ export default function OurApproach() {
             </div>
 
             {/* Card 5: Solutions for Every Scale */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-[#F6A100] transition-colors">
+              <h3 className="text-2xl font-bold text-[var(--hero-text)] font-sans mb-4 group-hover:text-teal-600 transition-colors">
                 Solutions for Every Scale
               </h3>
               <p className="text-[var(--hero-text)] font-sans opacity-80 leading-relaxed mb-6">
@@ -134,18 +134,18 @@ export default function OurApproach() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Modular Approach</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-[#F6A100] rounded-full"></div>
+                  <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                   <span className="text-sm font-medium text-[var(--hero-text)] font-sans">Budget-Conscious</span>
                 </div>
               </div>
             </div>
 
             {/* Card 6: Why Choose Us - Summary Card */}
-            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-[#F6A100] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 md:col-span-2 lg:col-span-1">
+            <div className="group bg-[var(--nav-bg)] rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 md:col-span-2 lg:col-span-1">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

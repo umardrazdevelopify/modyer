@@ -5,7 +5,7 @@ export default function Services() {
 
       {/* Hero Section */}
       <section className="w-full px-4 md:px-16 pt-20 pb-16 bg-[var(--nav-bg)]">
-        <div className="w-full max-w-6xl mx-auto text-center">
+        <div className="w-full max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-[var(--hero-text)] font-sans mb-6">
             Our <span className="relative" style={{color: "#F6A100"}}>Services<span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span></span>
           </h1>
@@ -17,7 +17,7 @@ export default function Services() {
 
       {/* Service 1: Digital Transformation & Process Modernization */}
       <section className="w-full px-4 md:px-16 py-16 bg-[var(--nav-bg)]">
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--hero-text)] font-sans mb-4">
@@ -76,7 +76,7 @@ export default function Services() {
 
       {/* Service 2: Custom AI & Agentic Solutions */}
       <section className="w-full px-4 md:px-16 py-16 bg-[var(--nav-bg)]">
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image/Graphic */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative w-80 h-80 bg-teal-100 rounded-full flex items-center justify-center shadow-xl">
@@ -145,7 +145,7 @@ export default function Services() {
 
       {/* Service 3: Enterprise Database & API Services */}
       <section className="w-full px-4 md:px-16 py-16 bg-[var(--nav-bg)]">
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--hero-text)] font-sans mb-4">

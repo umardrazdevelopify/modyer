@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Border */}
-        <div className="border-t border-gray-300 mt-8 pt-8">
+        <div className="border-t border-gray-300 mt-4 pt-4">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-[var(--hero-text)] font-sans text-sm">
               © 2024 MODYR. All rights reserved. Simplifying complexity since 1892.

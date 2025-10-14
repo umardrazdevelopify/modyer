@@ -7,8 +7,9 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content - Hidden on mobile, shown on desktop */}
           <div className="hidden lg:block space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-bold text-[var(--hero-text)] leading-tight font-sans">
-              Simplifying Complexity.{' '}
+            <h1 className="text-4xl lg:text-5xl font-bold text-[var(--hero-text)] leading-tight font-sans">
+              Simplifying Complexity
+              <br />
               <span className="relative" style={{color: "#F6A100"}}>
                 Since 1892
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span>
@@ -39,12 +40,12 @@ export default function HeroSection() {
 
           {/* Hero Image - Shown first on mobile */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative w-60 h-60 lg:w-100 lg:h-100 rounded-lg overflow-hidden">
+            <div className="relative w-100 h-100 lg:w-120 lg:h-140 rounded-lg overflow-hidden">
               <Image 
                 src="/assets/hero section.png" 
                 alt="Friendly Robot Illustration" 
-                width={450}
-                height={450}
+                width={600}
+                height={600}
                 className="w-full h-full object-contain"
               />
             </div>
@@ -54,6 +55,7 @@ export default function HeroSection() {
           <div className="lg:hidden space-y-6 order-2 px-4 py-6">
             <h1 className="text-4xl font-bold text-[var(--hero-text)] leading-tight font-sans">
               Simplifying Complexity.{' '}
+              <br />
               <span className="relative" style={{color: "#F6A100"}}>
                 Since 1892
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span>

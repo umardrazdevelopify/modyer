@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function CTA() {
   return (
-    <section className="w-full px-4 md:px-16 py-16 bg-[var(--nav-bg)]">
+    <section className="w-full px-4 md:px-16 py-16" style={{backgroundColor: "#f3e0c2"}}>
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           {/* CTA Content */}

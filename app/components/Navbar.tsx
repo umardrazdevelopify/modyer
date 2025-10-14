@@ -3,12 +3,20 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const isActive = (path: string) => {
+    if (path === '/' && pathname === '/') return true;
+    if (path !== '/' && pathname.startsWith(path)) return true;
+    return false;
   };
 
   return (
@@ -30,31 +38,51 @@ export default function Navbar() {
         <div className="flex items-center space-x-12">
           <Link 
             href="/" 
-            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+            className={`transition-colors font-medium text-lg ${
+              isActive('/') 
+                ? 'text-[#F6A100] font-bold' 
+                : 'text-gray-800 hover:text-gray-600'
+            }`}
           >
             Home
           </Link>
           <Link 
             href="/services" 
-            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+            className={`transition-colors font-medium text-lg ${
+              isActive('/services') 
+                ? 'text-[#F6A100] font-bold' 
+                : 'text-gray-800 hover:text-gray-600'
+            }`}
           >
             Services
           </Link>
           <Link 
             href="/our-approach" 
-            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+            className={`transition-colors font-medium text-lg ${
+              isActive('/our-approach') 
+                ? 'text-[#F6A100] font-bold' 
+                : 'text-gray-800 hover:text-gray-600'
+            }`}
           >
             Our Approach
           </Link>
           <Link 
             href="/about-us" 
-            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+            className={`transition-colors font-medium text-lg ${
+              isActive('/about-us') 
+                ? 'text-[#F6A100] font-bold' 
+                : 'text-gray-800 hover:text-gray-600'
+            }`}
           >
             About Us
           </Link>
           <Link 
             href="/contact-us" 
-            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+            className={`transition-colors font-medium text-lg ${
+              isActive('/contact-us') 
+                ? 'text-[#F6A100] font-bold' 
+                : 'text-gray-800 hover:text-gray-600'
+            }`}
           >
             Contact Us
           </Link>
@@ -98,35 +126,55 @@ export default function Navbar() {
             {/* Mobile Navigation Links */}
             <Link 
               href="/" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              className={`block px-3 py-2 transition-colors font-medium ${
+                isActive('/') 
+                  ? 'text-[#F6A100] font-bold' 
+                  : 'text-[var(--nav-text)] hover:text-gray-600'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               href="/services" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              className={`block px-3 py-2 transition-colors font-medium ${
+                isActive('/services') 
+                  ? 'text-[#F6A100] font-bold' 
+                  : 'text-[var(--nav-text)] hover:text-gray-600'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
               href="/our-approach" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              className={`block px-3 py-2 transition-colors font-medium ${
+                isActive('/our-approach') 
+                  ? 'text-[#F6A100] font-bold' 
+                  : 'text-[var(--nav-text)] hover:text-gray-600'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Our Approach
             </Link>
             <Link 
               href="/about-us" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              className={`block px-3 py-2 transition-colors font-medium ${
+                isActive('/about-us') 
+                  ? 'text-[#F6A100] font-bold' 
+                  : 'text-[var(--nav-text)] hover:text-gray-600'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
             </Link>
             <Link 
               href="/contact-us" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
+              className={`block px-3 py-2 transition-colors font-medium ${
+                isActive('/contact-us') 
+                  ? 'text-[#F6A100] font-bold' 
+                  : 'text-[var(--nav-text)] hover:text-gray-600'
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Us

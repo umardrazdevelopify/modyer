@@ -10,11 +10,11 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center">
               <Image 
-                src="/assets/Asset 1.png" 
+                src="/assets/logo for footer.png" 
                 alt="MODYR Logo" 
-                width={120}
-                height={110}
-                className="h-16 w-auto"
+                width={180}
+                height={160}
+                className="h-40 w-auto"
               />
             </div>
             <p className="text-white font-sans leading-relaxed max-w-md">

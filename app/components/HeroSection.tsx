@@ -2,16 +2,16 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-35 md:pb-35 bg-[var(--nav-bg)]">
+    <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-20 md:pb-20 bg-[var(--nav-bg)]">
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content - Hidden on mobile, shown on desktop */}
           <div className="hidden lg:block space-y-6">
             <h1 className="text-5xl lg:text-6xl font-bold text-[var(--hero-text)] leading-tight font-sans">
               Simplifying Complexity.{' '}
-              <span className="relative">
+              <span className="relative" style={{color: "#F6A100"}}>
                 Since 1892
-                <span className="absolute bottom-0 left-0 w-full h-1 bg-[var(--hero-underline)]"></span>
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span>
               </span>
             </h1>
             
@@ -54,9 +54,9 @@ export default function HeroSection() {
           <div className="lg:hidden space-y-6 order-2 px-4 py-6">
             <h1 className="text-4xl font-bold text-[var(--hero-text)] leading-tight font-sans">
               Simplifying Complexity.{' '}
-              <span className="relative">
+              <span className="relative" style={{color: "#F6A100"}}>
                 Since 1892
-                <span className="absolute bottom-0 left-0 w-full h-1 bg-[var(--hero-underline)]"></span>
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-[#F6A100]"></span>
               </span>
             </h1>
             

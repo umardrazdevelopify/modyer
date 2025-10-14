@@ -12,9 +12,52 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)] sticky top-0 z-50">
-      <div className="w-full flex items-center justify-between">
-        {/* Logo */}
+    <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)] md:static sticky top-0 z-50">
+      {/* Desktop Layout - Centered */}
+      <div className="hidden md:flex flex-col items-center">
+        {/* Logo - Centered */}
+        <div className="flex items-center">
+          <Image 
+            src="/assets/Asset 1.png" 
+            alt="MODYR Logo" 
+            width={140}
+            height={130}
+            className="h-30 w-auto"
+          />
+        </div>
+
+        {/* Desktop Navigation Links - Centered */}
+        <div className="flex items-center space-x-12">
+          <Link 
+            href="/" 
+            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+          >
+            Overview
+          </Link>
+          <Link 
+            href="/services" 
+            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+          >
+            Services
+          </Link>
+          <Link 
+            href="/ai-technology" 
+            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+          >
+            AI-Technology
+          </Link>
+          <Link 
+            href="/contact" 
+            className="text-gray-800 hover:text-gray-600 transition-colors font-medium text-lg"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+
+      {/* Mobile Layout - Original horizontal layout */}
+      <div className="md:hidden w-full flex items-center justify-between">
+        {/* Mobile Logo */}
         <div className="flex items-center">
           <Image 
             src="/assets/Asset 1.png" 
@@ -25,52 +68,10 @@ export default function Navbar() {
           />
         </div>
 
-        {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link 
-            href="/" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-          >
-            Home
-          </Link>
-          <a 
-            href="/services" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-          >
-            Services
-          </a>
-          <a 
-            href="/our-approach" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-          >
-            Our Approach
-          </a>
-          <a 
-            href="/about-us" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-          >
-            About Us
-          </a>
-          <a 
-            href="/contact-us" 
-            className="text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-          >
-            Contact Us
-          </a>
-        </div>
-
-        {/* Desktop Book a Call Button */}
-        <a
-          href="/try-claude"
-          className="hidden md:block bg-[var(--button-bg)] text-[var(--button-text)] px-8 py-3 rounded-md font-medium hover:opacity-90 transition-colors flex items-center"
-        >
-          Book a Call
-        </a>
-
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMobileMenu}
-          className="md:hidden text-[var(--nav-text)]"
+          className="text-[var(--nav-text)]"
         >
           {isMobileMenuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,45 +95,29 @@ export default function Navbar() {
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Home
+              Overview
             </Link>
-            <a 
+            <Link 
               href="/services" 
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
-            </a>
-            <a 
-              href="/our-approach" 
+            </Link>
+            <Link 
+              href="/ai-technology" 
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Our Approach
-            </a>
-            <a 
-              href="/about-us" 
+              AI-Technology
+            </Link>
+            <Link 
+              href="/contact" 
               className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About Us
-            </a>
-            <a 
-              href="/contact-us" 
-              className="block px-3 py-2 text-[var(--nav-text)] hover:text-gray-600 transition-colors font-medium"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contact Us
-            </a>
-            
-            {/* Mobile Book a Call Button */}
-            <a
-              href="/try-claude"
-              className="block mx-3 mt-4 bg-[var(--button-bg)] text-[var(--button-text)] px-8 py-3 rounded-md font-medium hover:opacity-90 transition-colors text-center"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Book a Call
-            </a>
+              Contact
+            </Link>
           </div>
         </div>
       )}

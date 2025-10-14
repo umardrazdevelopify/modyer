@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
   return (
     <section className="w-full px-4 md:px-16 pt-8 pb-8 md:pt-35 md:pb-35 bg-[var(--nav-bg)]">
@@ -38,9 +40,11 @@ export default function HeroSection() {
           {/* Hero Image - Shown first on mobile */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative w-60 h-60 lg:w-100 lg:h-100 rounded-lg overflow-hidden">
-              <img 
+              <Image 
                 src="/assets/Asset 4.png" 
                 alt="Friendly Robot Illustration" 
+                width={400}
+                height={400}
                 className="w-full h-full object-contain"
               />
             </div>

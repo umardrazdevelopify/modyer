@@ -170,23 +170,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-nav-bg: var(--nav-bg);
-  --color-nav-text: var(--nav-text);
-  --color-nav-button-bg: var(--nav-button-bg);
-  --color-nav-button-text: var(--nav-button-text);
-  --color-hero-text: var(--hero-text);
-  --color-hero-underline: var(--hero-underline);
-  --color-button-bg: var(--button-bg);
-  --color-button-text: var(--button-text);
-  --color-button-outline: var(--button-outline);
-  --color-illustration-branch: var(--illustration-branch);
-  --color-illustration-hands: var(--illustration-hands);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-}
+/* Removed @theme inline - this causes "Aw, Snap!" errors on mobile browsers */
 
 @media (prefers-color-scheme: dark) {
   :root {

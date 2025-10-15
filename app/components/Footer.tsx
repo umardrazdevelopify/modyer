@@ -66,9 +66,9 @@ export default function Footer() {
               </p>
               <p className="text-white font-sans">
                 <span className="font-medium">Address:</span><br />
-                123 Business Street<br />
-                Suite 100<br />
-                City, State 12345
+                IH-00-01-03-OF-05, Level 3<br />
+                DIFC Innovation One<br />
+                Dubai AI Campus
               </p>
             </div>
           </div>

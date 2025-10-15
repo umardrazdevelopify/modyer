@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,15 +9,20 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // Close mobile menu when pathname changes to prevent infinite loops
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
 
-  const isActive = (path: string) => {
+  const toggleMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(prev => !prev);
+  }, []);
+
+  const isActive = useCallback((path: string) => {
     if (path === '/' && pathname === '/') return true;
     if (path !== '/' && pathname.startsWith(path)) return true;
     return false;
-  };
+  }, [pathname]);
 
   return (
     <nav className="w-full px-4 md:px-8 bg-[var(--nav-bg)] md:static sticky top-0 z-50">

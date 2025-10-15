@@ -172,17 +172,57 @@
 
 /* Removed @theme inline - this causes "Aw, Snap!" errors on mobile browsers */
 
-@media (prefers-color-scheme: dark) {
+/* Disabled dark mode to prevent mobile black screen issues */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
     --nav-text: #000000;
     --hero-text: #000000;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Whyte Inktrap', var(--font-sans), Arial, Helvetica, sans-serif;
+  /* Mobile optimizations to prevent black screen */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Ensure proper mobile rendering */
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Mobile-specific fixes to prevent black screen */
+@media (max-width: 768px) {
+  * {
+    /* Force hardware acceleration on mobile */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    /* Prevent mobile browser crashes */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Ensure images don't cause layout issues */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Fix potential mobile layout issues */
+  body, html {
+    background: #fcf6e6 !important;
+    color: #000000 !important;
+  }
+  
+  /* Prevent mobile menu from causing black screen */
+  [class*="md:hidden"] {
+    background: #fcf6e6 !important;
+  }
 }

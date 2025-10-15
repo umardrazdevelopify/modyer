@@ -18,7 +18,7 @@ export default function CTA() {
           <div className="flex justify-center">
             <Link
               href="/contact-us"
-              className="bg-[var(--nav-bg)] border-2 border-teal-500 px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[var(--nav-bg)] border-2 border-teal-500 px-8 py-4 rounded-lg font-bold text-lg  transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <span className="text-teal-600">Schedule</span> <span className="text-[#F6A100]">A Free Process Review</span>
             </Link>

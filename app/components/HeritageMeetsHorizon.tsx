@@ -17,7 +17,7 @@ export default function HeritageMeetsHorizon() {
         {/* Three Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Pillar 1: Digital Transformation */}
-          <div className="text-center space-y-6 group hover:scale-105 transition-transform duration-300 rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
+          <div className="text-center space-y-6 group  rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
             <div className="relative">
               <div className="w-32 h-32 mx-auto flex items-center justify-center">
                 <Image 
@@ -38,7 +38,7 @@ export default function HeritageMeetsHorizon() {
           </div>
 
           {/* Pillar 2: Custom AI & Agentic Solutions */}
-          <div className="text-center space-y-6 group hover:scale-105 transition-transform duration-300 rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
+          <div className="text-center space-y-6 group  rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
             <div className="relative">
               <div className="w-32 h-32 mx-auto flex items-center justify-center">
                 <Image 
@@ -59,7 +59,7 @@ export default function HeritageMeetsHorizon() {
           </div>
 
           {/* Pillar 3: Enterprise Database & API Services */}
-          <div className="text-center space-y-6 group hover:scale-105 transition-transform duration-300 rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
+          <div className="text-center space-y-6 group  rounded-xl p-8 border-2 border-transparent hover:border-teal-500 shadow-lg hover:shadow-2xl transition-all duration-300" style={{backgroundColor: "#f3e0c2"}}>
             <div className="relative">
               <div className="w-32 h-32 mx-auto flex items-center justify-center">
                 <Image 

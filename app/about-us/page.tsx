@@ -96,9 +96,9 @@ export default function AboutUs() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vision Card */}
-            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#f3e0c2"}}>
+            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#f3e0c2"}}>
               <div className="text-center space-y-6">
-                <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                   <Image 
                     src="/assets/about-us/vissionn.png" 
                     alt="Our Vision" 
@@ -119,9 +119,9 @@ export default function AboutUs() {
             </div>
 
             {/* Mission Card */}
-            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#ccddd7"}}>
+            <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#ccddd7"}}>
               <div className="text-center space-y-6">
-                <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                   <Image 
                     src="/assets/about-us/mission.png" 
                     alt="Our Mission" 

@@ -23,9 +23,9 @@ export default function OurApproach() {
             {/* Top Row - 2 Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Card 1: Partners, Not Providers - Image Top */}
-                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#f3e0c2"}}>
+                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#f3e0c2"}}>
                     <div className="text-center space-y-6">
-                      <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                         <Image 
                           src="/assets/our approach/our approach 1.png" 
                           alt="Partners, Not Providers" 
@@ -46,9 +46,9 @@ export default function OurApproach() {
                   </div>
 
                   {/* Card 2: Pragmatic AI - Image Top */}
-                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#ccddd7"}}>
+                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#ccddd7"}}>
                     <div className="text-center space-y-6">
-                      <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                         <Image 
                           src="/assets/our approach/our approach 2.png" 
                           alt="Pragmatic AI" 
@@ -72,9 +72,9 @@ export default function OurApproach() {
             {/* Bottom Row - 3 Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {/* Card 3: Best-of-Breed Technology - Image Top */}
-                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#f3c9ac"}}>
+                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#f3c9ac"}}>
                     <div className="text-center space-y-6">
-                      <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                         <Image 
                           src="/assets/our approach/our approach 3.png" 
                           alt="Best-of-Breed Technology" 
@@ -95,9 +95,9 @@ export default function OurApproach() {
                   </div>
 
                   {/* Card 4: Phased Approach - Image Top */}
-                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#ccddd7"}}>
+                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#ccddd7"}}>
                     <div className="text-center space-y-6">
-                      <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                         <Image 
                           src="/assets/our approach/our approach 4.png" 
                           alt="Phased Approach" 
@@ -118,9 +118,9 @@ export default function OurApproach() {
                   </div>
 
                   {/* Card 5: Solutions for Every Scale - Image Top */}
-                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105" style={{backgroundColor: "#f3c9ac"}}>
+                  <div className="group rounded-2xl p-8 border-2 border-transparent hover:border-teal-500 transition-all duration-300 shadow-lg hover:shadow-2xl " style={{backgroundColor: "#f3c9ac"}}>
                     <div className="text-center space-y-6">
-                      <div className="flex items-center justify-center w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-32 h-32 mx-auto ">
                         <Image 
                           src="/assets/our approach/our approach 5.png" 
                           alt="Solutions for Every Scale" 
